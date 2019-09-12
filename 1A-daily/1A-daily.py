@@ -39,27 +39,26 @@ car.get('year')
 dir(car)
 #%% { curly bracket, comma}
 #Set - ordered collection of simple items, immutable
-set1 = set(['asia','africa','europe','north_america','south_america'])
+set1 = set(['asia','africa','europe','north_america','south_america','australia'])
 set1
 type(set1)
 
 set2 = {'ASIA',"AFRICA","ASIA"}  #better way
 set2            # : {'AFRICA', 'ASIA'}--> considers only unique values
-set3 = {'Australia', 'South Africa', 'INDIA'}
+set3 = {'Australia', 'south_america', 'AFRICA'}
 set3
 sorted(set3)
 set2.union(set3) #set2 | set3
-A.intersection(B)
-set2.intersection(set3) #set2 & set
-
+# A.intersection(B)
+set2.intersection(set3) #set2 & set  : 'AFRICA'
 type(set2)
 print(set2)
 #%% #Strings : 'single quote'  or "doublequote"
 #strings as text in string; imutable
-str1 = 'Python Programming'
+str1 = 'Python'
 type(str1)
 print(str1)
-str2="Yash"
+str2="Akhil"
 str2.lower()
 #dict?
 dir(str)
@@ -69,10 +68,10 @@ list1
 
 #for loop : indentations with colon : Run next 2 lines together
 for i in list1:
-    print(i)
+    print(i,end="\t")   # '\t' puts a tab at the end instead of goign to new line
   
 for i in list1:    print(i)
-for i in list1[0:5]:    print('Dhiraj {}'.format(i+5))
+for i in list1[0:5]:    print('Akhil {}'.format(i/10))
 
 tuple1
 list5 = ['a',1]
