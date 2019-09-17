@@ -1,6 +1,8 @@
 #Case Study on mtcars dataset in Python	download data
 import pandas as pd
-
+import statsmodels.api as sm
+#https://vincentarelbundock.github.io/Rdatasets/datasets.html
+dataset_mtcars = sm.datasets.get_rdataset(dataname='mtcars', package='datasets')
 #data read
 #Method1
 mtcars1 = pd.read_csv('../../pyData/mtcars.csv')
