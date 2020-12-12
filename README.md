@@ -1,2 +1,2 @@
 # pyAnalytics
-My first analytics project on Github with Python
+My first application based analytics course using Python
